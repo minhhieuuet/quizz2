@@ -3,29 +3,32 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>HTML and CSS Quiz</title>
+  <title>CẶP ĐÔI HOÀN HẢO ( The Perfect Couple)</title>
   
   
   
       <link rel="stylesheet" href="css/style.css">
-
-  
-</head>
-
-<body>
-
-  <!DOCTYPE html>
-<html>
-<head>
-    <title></title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Rokkitt|Yeseva+One" rel="stylesheet">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+    <div id="fb-root"></div>
+  <script language="javascript">
+    function fbshareCurrentPage()
+    {window.open("https://www.facebook.com/sharer/sharer.php?u="+escape(window.location.href)+"&t="+document.title, '', 
+    'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');
+    return false; }
+</script>
     <div class="front">
-        <h1>HTML and CSS Quiz</h1>
-        <button type="button" id="start">Start</button>    
+        <h1>CẶP ĐÔI HOÀN HẢO ( The Perfect Couple)</h1>
+        <p>Đôi bạn “Hệ Tiêu Hóa Khỏe” và “ Trí Não Tinh Anh” có gắn bó rất mật
+thiết với nhau. Hệ tiêu hóa khỏe còn có nick name là “ Bộ Não Thứ 2” của
+bé đấy.
+
+Hai “cặp đôi” này kết hợp hoàn hảo với nhau như thế nào, Bố/Mẹ hãy
+cùng thử tài phán đoán cùng Glico Icreo nhé!</p>
+        <button type="button" id="start">Bắt đầu</button>    
     </div>
     <div class="quiz">
         <p id="num"></p>
@@ -35,38 +38,33 @@
             <div id="op2"></div>
             <div id="op3"></div>
             <div id="op4"></div>
+            <div id="op5"></div>
         </div><br>
-        <center><button type="button" id="sub">Submit</button></center>
+        <center><button type="button" id="sub">Trả lời</button></center>
     </div>
     <div class="result" >
-        <div class="score"></div>
+        Điểm:
+        <div class="score">
+            
+        </div>
         <br>
         <div class="message"></div>
-        <button type="button" id="an">Click here to see answers</button>
+        <button type="button" id="an">Tiếp tục</button>
     </div>
     <div class="answers">
-        <p class="qa">1.Which tag is used to create clickable link?</p>
-        <p >Ans:<span id="a1">&lt;a&gt;</span></p>
-        <p class="qa">2.Which tag is used to specify a list of prefined options for input controls?</p>
-        <p >Ans:<span id="a2">&lt;datalist&gt;</p>
-        <p class="qa">3. Which HTML element is used to display a scalar measurement within a range?</p>
-        <p >Ans:<span id="a3">&lt;meter&gt;</span></p>
-        <p class="qa">4.Choose the correct HTML element to define important text?</p>
-        <p >Ans:<span id="a4">&lt;strong&gt;</span></p>
-        <p class="qa">5.______ element in HTML5 is used to indicate that text has been added to the document.?</p>
-        <p>Ans:<span id="a5">&lt;ins&gt;</span></p>
-        <p class="qa">6.______ attribute used in &lt;table&gt; element sets the width, in pixels, between the edge of a cell and its content</p>
-        <p>Ans:<span id="a6">cellpadding</span></p>
-        <p class="qa">7.Which attribute specifies the stack order of an element?</p>
-        <p >Ans:<span id="a7">z-index</span></p>
-        <p class="qa">8.Which property controls scrolling of an image in background? </p>
-        <p >Ans:<span id="a8">background-attachment.</span></p>
-        <p class="qa">9.What is default value of position property?</p>
-        <p >Ans:<span id="a9">static</span></p>
+       <h1>Xin chúc mừng Bố ( Mẹ) Thông Thái đã nhận được phần quà từ
+<br>
+<h1>
+Glico Icreo Nội địa Nhật Bản
+<br>
+</h1>
 
-        <p class="qa">10.Which CSS has highest priority?</p>
-        <p>Ans:<span id="a10">inline</p>
-    </div>
+<h1>“ Hệ tiêu hóa Khỏe – Trí não tinh anh”</h1>
+
+<h1 style="color: red;">Hãy chia sẻ về Facebook ngay để rinh quà giá trị nhé! (*)</h1>
+ <a class="fa fa-facebook" href="javascript:fbshareCurrentPage()" target="_blank" alt="Share on Facebook"></a>
+</div>
+
     
 </body>
 

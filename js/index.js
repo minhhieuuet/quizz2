@@ -4,28 +4,24 @@
         var right;
         var i=0;
         var score=0;
-        var que1={que:"Which tag is used to create clickable link?",
-            ans:["&lt;hyperlink&gt;","&lt;a&gt;","&lt;link&gt;","&lt;source&gt;"],
-            right:"1"};
-        var que2={que:"Which tag is used to specify a list of prefined options for input controls?",
-            ans:["&lt;embed&gt;","&lt;source&gt;","&lt;li&gt;","&lt;datalist&gt;"],
-            right:"3"};
-        var que3={que:" Which HTML element is used to display a scalar measurement within a range?",
-            ans:["&lt;meter&gt;","&lt;range&gt;","&lt;scalar&gt;","&lt;progress&gt;"],    right:"0"};
-        var que4={que:"Choose the correct HTML element to define important text?",
-            ans:["&lt;important&gt;","&lt;strong&gt;","&lt;imp&gt;","&lt;b&gt;"],
-            right:"1"};
-        var que5={que:"______ element in HTML5 is used to indicate that text has been added to the document.?",
-            ans:["&lt;fill&gt;","&lt;insert&gt;","&lt;add&gt;","&lt;ins&gt;"],
-            right:"3"};
-        var que6={que:"______ attribute used in <table> element sets the width, in pixels, between the edge of a cell and its content",
-            ans:["cellpadding"," cellspacing","colspacing","edgespacing"],
+        var que1={que:"Giai đoạn đầu đời của bé, chỉ quan tâm đến phát triển não bộ hay hệ tiêu hóa có đủ không?",
+            ans:["Bố/ mẹ nên quan tâm phát triển song song cả hệ tiêu hóa khỏe lẫn sự phát triển não bộ để bé nhạy bén tinh anh","Đúng, chỉ nên quan tâm phát triển não bộ thôi","Con chỉ cần có hệ tiêu hóa khỏe là được"],
             right:"0"};
-        var que7={que:"Which attribute specifies the stack order of an element?",ans:["x-index","y-index","z-index","xy-index"],right:"2"};
-        var que8={que:"Which property controls scrolling of an image in background? ",ans:["background-fixed","background-scroll","background-scrolling","background-attachment"],right:"3"};
-        var que9={que:"What is default value of position property?",ans:["static","fixed","relative","absolute"],right:"0"};
-        var que10={que:"Which CSS has highest priority?",ans:["inline","internal","external","Each have equal priority"],right:"0"};
-        var quelst=[que1,que2,que3,que4,que5,que6,que7,que8,que9,que10];
+        var que2={que:"Vì sao gọi Hệ tiêu hóa là “bộ não” thứ 2 của bé?",
+            ans:["Trong ruột bé có các tế bào thần kinh và được liên tục kết nối với hệ thần kinh não bộ và có tác động lẫn nhau. Nên các nhà khoa học thường gọi hệ tiêu hóa là “ bộ não thứ 2” là vì vậy","Không biết","Hệ tiêu hóa & bộ não trẻ đâu có liên quan"],
+            right:"0"};
+        var que3={que:" Những dấu hiệu nào dưới đây thể hiện bé có “Hệ tiêu hóa khỏe”?",
+            ans:["Đi tiêu đều đặn, phân mềm/ sệt","Bú/ ăn dễ dàng","Tăng trưởng tốt theo chuẩn WHO","Hoạt động hàng ngày thoải mái, lanh lợi","Tất cả các đáp án trên"],
+            right:"4"};
+        var que4={que:"Những dấu hiệu nào dưới đây thể hiện bé có “Trí não tinh anh”? ",
+            ans:["Con lanh lợi, hoạt bát","Phát triển các kỹ năng chuẩn theo mốc tháng ( độ) tuổi","Phát triển khỏe mạnh, cân bằng","Tất cả các đáp án trên"],
+            right:"3"};
+        var que5={que:"Hệ tiêu hóa khỏe sẽ giúp phát triển gì??",
+            ans:["Phát triển thể chất, tăng trưởng đều","Tất cả các đáp án trên, đặc biệt giúp trí não tinh anh."],
+            right:"1"};
+     
+       
+        var quelst=[que1,que2,que3,que4,que5];
         var wrong=[];
         $("#start").click(function(){
             $(".front").hide();
@@ -36,7 +32,18 @@
             $("#op1").html("<input type='radio' name='opt' id='o1' value='0'><label for='o1'>"+quelst[i].ans[0])+"</label>";
             $("#op2").html("<input type='radio' name='opt' id='o2' value='1'><label for='o2'>"+quelst[i].ans[1])+"</label>";
             $("#op3").html("<input type='radio' name='opt' id='o3' value='2'><label for='o3'>"+quelst[i].ans[2])+"</label>";
-            $("#op4").html("<input type='radio' name='opt' id='o4' value='3'><label for='o4'>"+quelst[i].ans[3])+"</label>";
+            if(quelst[i].ans[3]){
+                 $("#op4").html("<input type='radio' name='opt' id='o4' value='3'><label for='o4'>"+quelst[i].ans[3])+"</label>";
+            }
+            if(quelst[i].ans[4]){
+                 $("#op5").html("<input type='radio' name='opt' id='o5' value='4'><label for='o5'>"+quelst[i].ans[4])+"</label>";
+            }
+            // Remove null 
+            $('.radio>div').each(function(i){
+                if(!$(this).text()){
+                    $(this).hide();
+                }
+            })
             
         });
         $("#sub").click(function(){
@@ -67,12 +74,41 @@
             if(i!=(quelst.length)-1){
                     i++;
                 }
+            $('.radio>div').each(function(i){
+                
+                    $(this).show();
+                
+            })
             $("#q").text(quelst[i].que);
             $("#op1").html("<input type='radio' name='opt' id='o1' value='0'><label for='o1'>"+quelst[i].ans[0])+"</label>";
             $("#op2").html("<input type='radio' name='opt' id='o2' value='1'><label for='o2'>"+quelst[i].ans[1])+"</label>";
-            $("#op3").html("<input type='radio' name='opt' id='o3' value='2'><label for='o3'>"+quelst[i].ans[2])+"</label>";
-            $("#op4").html("<input type='radio' name='opt' id='o4' value='3'><label for='o4'>"+quelst[i].ans[3])+"</label>";
+            if(quelst[i].ans[2]){
+               $("#op3").html("<input type='radio' name='opt' id='o3' value='2'><label for='o3'>"+quelst[i].ans[2])+"</label>"; 
+            }
+            else{
+                $("#op3").html('');
+            }
+            
+            if(quelst[i].ans[3]){
+                 $("#op4").html("<input type='radio' name='opt' id='o4' value='3'><label for='o4'>"+quelst[i].ans[3])+"</label>";
+            }
+            else{
+                $('#op4').html('');
+            }
+            if(quelst[i].ans[4]){
+                 $("#op5").html("<input type='radio' name='opt' id='o5' value='4'><label for='o5'>"+quelst[i].ans[4])+"</label>";
+            }
+            else{
+                $('#op5').html('');
+            }
+            // Remove null 
+            $('.radio>div').each(function(i){
+                if(!$(this).text()){
+                    $(this).hide();
+                }
+            })
             $("#num").text(i+1+"/"+quelst.length);
+
             $("#sub").show();
             }
         function reslt(){
@@ -80,13 +116,13 @@
             $(".result").show();
             $(".score").text(score+"/"+quelst.length);
             if(score<=4){
-                $(".message").text("Oh no!!You need to do better.");
+                $(".message").text("Tiếc quá!!! ");
             }
             else if(score<8){
-                $(".message").text("Good.Dont stop studying.");
+                $(".message").text("Tốt lắm");
             }
             else{
-                $(".message").text("Great!!You have really good knowledge of HTML and CSS.");
+                $(".message").text("Wow! Tuyệt vời!");
             }
         }
         $("#an").click(function(){
