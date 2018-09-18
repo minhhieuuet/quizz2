@@ -1,4 +1,4 @@
- $(document).ready(function(){
+  $(document).ready(function(){
         var que;
         var ans;
         var right;
@@ -115,10 +115,10 @@
             $(".quiz").hide();
             $(".result").show();
             $(".score").text(score+"/"+quelst.length);
-            if(score<=4){
+            if(score<=2){
                 $(".message").text("Tiếc quá!!! ");
             }
-            else if(score<8){
+            else if(score<5){
                 $(".message").text("Tốt lắm");
             }
             else{
