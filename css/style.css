@@ -10,6 +10,7 @@
        width:300px;
        margin-top:500px;
        font-size:60px !important;
+      border:5px dashed #e198c3;
    }
    .radio{
        font-size:40px;
@@ -20,6 +21,7 @@
      height:120px;
      font-size:60px!important;
      margin-top:1030px;
+       border:5px dashed #e198c3;
    }
   .quiz{
      font-size: 55px ;
@@ -45,7 +47,7 @@
            margin-bottom: 0px !important;
            min-height: 100%;
 
-           background-image:url('https://quiz.glico.vn/image/first.jpg')  ;
+           background-image:url('../image/first.jpg')  ;
            background-size:cover;
            background-repeat: no-repeat;
           background-position: center;
@@ -82,6 +84,7 @@
            height:120px;
            font-size:60px!important;
            margin-top:100px;
+           border:5px dashed #e198c3;  
        }
        .first{
          margin:2%;
