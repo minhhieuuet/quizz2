@@ -138,6 +138,7 @@ $(document).ready(function(){
             if(i==4){
               let imageUrl=window.location.href+"/image/quiz5.jpg";
               $('body').css('background-image', 'url("' + imageUrl + '"');
+              $('#sub').html('Kết thúc');
             }
           }
           $("#sub").fadeIn();
