@@ -139,6 +139,9 @@ $(document).ready(function(){
               let imageUrl=window.location.href+"/image/quiz5.jpg";
               $('body').css('background-image', 'url("' + imageUrl + '"');
               $('#sub').html('Kết thúc');
+              $('#sub')..animate({
+               bottom:'-=30px'
+             },"fast")
             }
           }
           $("#sub").fadeIn();
@@ -156,7 +159,8 @@ $(document).ready(function(){
           else{
               $(".message").text("Chúc mừng bạn đã trả lời đúng 5/5 câu hỏi");
                let imageUrl=window.location.href+"/image/gift2.jpg";
-          $('body').css('background-image', 'url("' + imageUrl + '"');
+               $('body').css('background-image', 'url("' + imageUrl + '"');
+               
           }
       }
       $("#an").click(function(){
