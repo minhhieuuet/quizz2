@@ -140,7 +140,7 @@ $(document).ready(function(){
               $('body').css('background-image', 'url("' + imageUrl + '"');
               $('#sub').html('Kết thúc');
               $('#sub').css('margin-top',function(index,curVal){
-                  return parseInt(curValue, 10) + 10 + 'px';                
+                  return parseInt(curVal, 10) + 20 + 'px';                
               })
             }
           }
