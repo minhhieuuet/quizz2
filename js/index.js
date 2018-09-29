@@ -139,7 +139,7 @@ $(document).ready(function(){
               let imageUrl=window.location.href+"/image/quiz5.jpg";
               $('body').css('background-image', 'url("' + imageUrl + '"');
               $('#sub').html('Kết thúc');
-              $('#sub').animate({bottom:'-=30px'},"fast");
+              
             }
           }
           $("#sub").fadeIn();
