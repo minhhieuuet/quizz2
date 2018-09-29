@@ -147,7 +147,7 @@ $(document).ready(function(){
           $(".quiz").hide();
           $(".result").fadeIn();
           $(".score").text(score+"/"+quelst.length);
-          let imageUrl=window.location.href+"/image/result.jpg";
+          let imageUrl=window.location.href+"/image/gift1.jpg";
           $('body').css('background-image', 'url("' + imageUrl + '"');
           if(score<=4){
               $(".message").text("Rất tiếc bạn chỉ trả lời đúng "+score+"/"+quelst.length+ " câu hỏi");
@@ -155,6 +155,8 @@ $(document).ready(function(){
 
           else{
               $(".message").text("Chúc mừng bạn đã trả lời đúng 5/5 câu hỏi");
+               let imageUrl=window.location.href+"/image/gift2.jpg";
+          $('body').css('background-image', 'url("' + imageUrl + '"');
           }
       }
       $("#an").click(function(){
