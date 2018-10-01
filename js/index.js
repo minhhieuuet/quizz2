@@ -119,24 +119,24 @@ $(document).ready(function(){
           })
           $("#num").text("Câu "+parseInt(i+1)+"/"+quelst.length);
           if(i==0){
-            let imageUrl=window.location.href+"/image/quiz1.jpg";
+            let imageUrl=window.location.href+"/image/quiz-1.jpg";
             $('body').css('background-image', 'url("' + imageUrl + '"');
           }
           else{
             if(i==1){
-              let imageUrl=window.location.href+"/image/quiz2.jpg";
+              let imageUrl=window.location.href+"/image/quiz-2.jpg";
               $('body').css('background-image', 'url("' + imageUrl + '"');
             }
             if(i==2){
-              let imageUrl=window.location.href+"/image/quiz3.jpg";
+              let imageUrl=window.location.href+"/image/quiz-3.jpg";
               $('body').css('background-image', 'url("' + imageUrl + '"');
             }
             if(i==3){
-              let imageUrl=window.location.href+"/image/quiz4.jpg";
+              let imageUrl=window.location.href+"/image/quiz-4.jpg";
               $('body').css('background-image', 'url("' + imageUrl + '"');
             }
             if(i==4){
-              let imageUrl=window.location.href+"/image/quiz5.jpg";
+              let imageUrl=window.location.href+"/image/quiz-5.jpg";
               $('body').css('background-image', 'url("' + imageUrl + '"');
               $('#sub').html('Kết thúc');
               $('#sub').css('margin-top',function(index,curVal){
