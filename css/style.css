@@ -43,6 +43,12 @@
        font-size:80px !important;
        font-weight:1000 !important;
    }
+ #num{
+    font-size:60px !important;
+     width:250px !important;
+      margin-left:180px;
+      margin-top:-19px;
+  }
        body{
            background-color:#e198c3;
            margin-bottom: 0px !important;
