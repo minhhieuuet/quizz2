@@ -160,7 +160,7 @@ $(document).ready(function(){
           else{
               $(".message").text("Chúc mừng bạn đã trả lời đúng 5/5 câu hỏi");
                 $('#share').attr('href','https://www.facebook.com/sharer.php?u=https://quiz.glico.vn&quote='+"Tôi đã trả lời đúng 5/5 câu hỏi ! Còn bạn thì sao ?")
-               let imageUrl="https://quiz.glico.vn/gift2.jpg";
+               let imageUrl="https://quiz.glico.vn/image/gift2.jpg";
                $('body').css('background-image', 'url("' + imageUrl + '"');
                
                
