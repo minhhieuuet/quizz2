@@ -27,13 +27,13 @@ $(document).ready(function(){
       $("#join").click(function(){
         $('.first').hide();
         $(".front").fadeIn();
-        var imageUrl=window.location.href+"/image/front1.jpg";
+        var imageUrl="https://quiz.glico.vn/image/front1.jpg";
         $('body').css('background-image', 'url("' + imageUrl + '"').fadeIn(2000);
       })
       $("#start").click(function(){
           $('.first').hide();
           $(".front").hide();
-          var imageUrl=window.location.href+"/image/quiz1.jpg";
+          var imageUrl="https://quiz.glico.vn/image/quiz-1.jpg";
           $('body').css('background-image', 'url("' + imageUrl + '"').fadeIn(2000);
                 $("#sub").fadeIn();
                 $(".quiz").fadeIn();
@@ -119,24 +119,24 @@ $(document).ready(function(){
           })
           $("#num").text("Câu "+parseInt(i+1)+"/"+quelst.length);
           if(i==0){
-            let imageUrl=window.location.href+"/image/quiz-1.jpg";
+            let imageUrl="https://quiz.glico.vn/image/quiz-1.jpg";
             $('body').css('background-image', 'url("' + imageUrl + '"');
           }
           else{
             if(i==1){
-              let imageUrl=window.location.href+"/image/quiz-2.jpg";
+              let imageUrl="https://quiz.glico.vn/image/quiz-2.jpg";
               $('body').css('background-image', 'url("' + imageUrl + '"');
             }
             if(i==2){
-              let imageUrl=window.location.href+"/image/quiz-3.jpg";
+              let imageUrl="https://quiz.glico.vn/image/quiz-3.jpg";
               $('body').css('background-image', 'url("' + imageUrl + '"');
             }
             if(i==3){
-              let imageUrl=window.location.href+"/image/quiz-4.jpg";
+              let imageUrl="https://quiz.glico.vn/image/quiz-4.jpg";
               $('body').css('background-image', 'url("' + imageUrl + '"');
             }
             if(i==4){
-              let imageUrl=window.location.href+"/image/quiz-5.jpg";
+              let imageUrl="https://quiz.glico.vn/image/quiz-5.jpg";
               $('body').css('background-image', 'url("' + imageUrl + '"');
               $('#sub').html('Kết thúc');
               $('#sub').css('margin-top',function(index,curVal){
@@ -150,7 +150,7 @@ $(document).ready(function(){
           $(".quiz").hide();
           $(".result").fadeIn();
           $(".score").text(score+"/"+quelst.length);
-          let imageUrl=window.location.href+"/image/gift1.jpg";
+          let imageUrl="https://quiz.glico.vn/image/gift1.jpg";
           $('body').css('background-image', 'url("' + imageUrl + '"');
           if(score<=4){
               $(".message").text("Rất tiếc bạn chỉ trả lời đúng "+score+"/"+quelst.length+ " câu hỏi");
