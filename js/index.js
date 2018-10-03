@@ -154,12 +154,12 @@ $(document).ready(function(){
           $('body').css('background-image', 'url("' + imageUrl + '"');
           if(score<=4){
               $(".message").text("Rất tiếc bạn chỉ trả lời đúng "+score+"/"+quelst.length+ " câu hỏi");
-              $('#share').attr('href','https://www.facebook.com/sharer.php?u=https://quiz.glico.vn&quote='+"Xem thêm tại fanpage Mẹ Nhật Nuôi Con")
+              $('#share').attr('href','https://www.facebook.com/sharer.php?u=https://www.facebook.com/GlicoMeNhatNuoiCon&quote='+"Xem thêm tại fanpage Mẹ Nhật Nuôi Con")
           }
 
           else{
               $(".message").text("Chúc mừng bạn đã trả lời đúng 5/5 câu hỏi");
-                $('#share').attr('href','https://www.facebook.com/sharer.php?u=https://quiz.glico.vn&quote='+"Xem thêm tại fanpage Mẹ Nhật Nuôi Con")
+                $('#share').attr('href','https://www.facebook.com/sharer.php?u=https://www.facebook.com/GlicoMeNhatNuoiCon&quote='+"Xem thêm tại fanpage Mẹ Nhật Nuôi Con")
                let imageUrl="https://quiz.glico.vn/image/gift2.jpg";
                $('body').css('background-image', 'url("' + imageUrl + '"');
                
