@@ -154,7 +154,7 @@ $(document).ready(function(){
           $('body').css('background-image', 'url("' + imageUrl + '"');
           if(score<=4){
               $(".message").text("Rất tiếc bạn chỉ trả lời đúng "+score+"/"+quelst.length+ " câu hỏi");
-              $('#share').attr('href','https://www.facebook.com/sharer.php?u=https://quiz.glico.vn&quote='+"Tôi đã trả lời đúng "+score+"/"+quelst.length+ " câu hỏi! Còn bạn thì sao ?")
+              $('#share').attr('href','https://www.facebook.com/sharer.php?u=https://quiz.glico.vn&quote='+"Xem thêm tại fanpage Mẹ Nhật Nuôi Con")
           }
 
           else{
